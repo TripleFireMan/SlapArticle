@@ -114,9 +114,9 @@ typedef NS_ENUM(NSInteger, SAArticleFilterType) {
     }
     
     
-    [SAWeChatLoginView showWithActive:^(enum SAWeChatActive avtive) {
-        
-    }];
+//    [SAWeChatLoginView showWithActive:^(enum SAWeChatActive avtive) {
+//        
+//    }];
 
 }
 
