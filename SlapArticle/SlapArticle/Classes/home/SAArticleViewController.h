@@ -9,5 +9,10 @@
 #import "UIBaseViewController.h"
 
 @interface SAArticleViewController : UIBaseViewController
+
+
 @property (nonatomic, assign) BOOL isPresent;
+
+
+
 @end
