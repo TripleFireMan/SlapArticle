@@ -1,0 +1,30 @@
+//
+//  SlapArticle.pch
+//  SlapArticle
+//
+//  Created by 成焱 on 15/10/17.
+//  Copyright © 2015年 成焱. All rights reserved.
+//
+
+#ifndef SlapArticle_pch
+#define SlapArticle_pch
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import <SystemConfiguration/SystemConfiguration.h>
+#import <MobileCoreServices/MobileCoreServices.h>
+#import "ITTDebug.h"
+#import "UIUtil.h"
+#import "ITTDataEnvironment.h"
+#import "CONSTS.h"
+#import "ITTAdditions.h"
+#import "ITTCommonMacros.h"
+#import "ITTCommonFunctions.h"
+#import "SAUrl.h"
+#import "SVPullToRefresh.h"
+#import "WBSDK.h"
+#import "MobClick.h"
+#import "SVProgressHUD.h"
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* SlapArticle_pch */

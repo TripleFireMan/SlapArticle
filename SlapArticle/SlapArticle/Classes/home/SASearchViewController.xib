@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SASearchViewController">
+            <connections>
+                <outlet property="tableView" destination="Hen-1U-rbf" id="DeG-gd-YsE"/>
+                <outlet property="tableViewSearch" destination="EaC-eZ-lIg" id="nfB-YM-8Wq"/>
+                <outlet property="view" destination="IGl-e5-lJh" id="IJj-ir-R7d"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view autoresizesSubviews="NO" contentMode="scaleToFill" id="IGl-e5-lJh">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="EaC-eZ-lIg">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <color key="backgroundColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.93725490196078431" alpha="1" colorSpace="calibratedRGB"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="1qe-a8-luA"/>
+                        <outlet property="delegate" destination="-1" id="6Dz-0j-tY3"/>
+                    </connections>
+                </tableView>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Hen-1U-rbf">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="E1l-of-FT0"/>
+                        <outlet property="delegate" destination="-1" id="jvr-rV-Zbg"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="EaC-eZ-lIg" secondAttribute="bottom" id="8eM-cw-aho"/>
+                <constraint firstItem="EaC-eZ-lIg" firstAttribute="top" secondItem="IGl-e5-lJh" secondAttribute="top" id="Gnt-VD-bZf"/>
+                <constraint firstItem="Hen-1U-rbf" firstAttribute="leading" secondItem="IGl-e5-lJh" secondAttribute="leading" id="K9R-T7-XrS"/>
+                <constraint firstAttribute="bottom" secondItem="Hen-1U-rbf" secondAttribute="bottom" id="TRp-DK-TY5"/>
+                <constraint firstAttribute="trailing" secondItem="Hen-1U-rbf" secondAttribute="trailing" id="V9b-rY-dNg"/>
+                <constraint firstItem="Hen-1U-rbf" firstAttribute="top" secondItem="IGl-e5-lJh" secondAttribute="top" id="nch-Og-sRK"/>
+                <constraint firstAttribute="trailing" secondItem="EaC-eZ-lIg" secondAttribute="trailing" id="rLv-yE-V7O"/>
+                <constraint firstItem="EaC-eZ-lIg" firstAttribute="leading" secondItem="IGl-e5-lJh" secondAttribute="leading" id="v5H-7f-Xwe"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+            <point key="canvasLocation" x="449" y="-249"/>
+        </view>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="cA6-aK-TPX">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="cA6-aK-TPX" id="ovx-5T-iOM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+            </tableViewCellContentView>
+            <point key="canvasLocation" x="581" y="-320"/>
+        </tableViewCell>
+    </objects>
+</document>

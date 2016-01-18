@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="gray" indentationWidth="10" reuseIdentifier="hotCell" id="KGk-i7-Jjw" customClass="SASearchHotWordTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="美女" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wme-DR-Tp4">
+                        <rect key="frame" x="15" y="11" width="224" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="224" id="Kbg-l6-DO4"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.28235294117647058" green="0.70196078431372544" blue="0.65098039215686276" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sa_search" translatesAutoresizingMaskIntoConstraints="NO" id="Run-RF-TIx">
+                        <rect key="frame" x="286" y="14" width="16" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="16" id="i3E-lh-sJE"/>
+                            <constraint firstAttribute="height" constant="16" id="raA-wY-feR"/>
+                        </constraints>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sa_gray_line" translatesAutoresizingMaskIntoConstraints="NO" id="5Rh-il-7VG">
+                        <rect key="frame" x="15" y="43" width="305" height="1"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="fG4-Ao-idy"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="5Rh-il-7VG" secondAttribute="trailing" id="2kf-fu-8l4"/>
+                    <constraint firstItem="wme-DR-Tp4" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="3" id="Csu-cR-xBz"/>
+                    <constraint firstItem="5Rh-il-7VG" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="IS6-TY-Fkw"/>
+                    <constraint firstAttribute="bottom" secondItem="5Rh-il-7VG" secondAttribute="bottom" id="Pjf-KS-Bha"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="wme-DR-Tp4" secondAttribute="bottom" constant="3.5" id="RRa-UM-Zkp"/>
+                    <constraint firstItem="Run-RF-TIx" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="6" id="YB8-ga-Fdy"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="Run-RF-TIx" secondAttribute="trailing" constant="10" id="YEC-au-STz"/>
+                    <constraint firstItem="wme-DR-Tp4" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="7" id="lgZ-IT-Kva"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="hotWord" destination="wme-DR-Tp4" id="2h8-Uw-sZr"/>
+            </connections>
+            <point key="canvasLocation" x="422" y="277"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="sa_gray_line" width="311" height="1"/>
+        <image name="sa_search" width="33" height="33"/>
+    </resources>
+</document>
