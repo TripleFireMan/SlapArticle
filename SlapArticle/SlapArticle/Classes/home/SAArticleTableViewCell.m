@@ -71,6 +71,8 @@
     [self.zanBtn setImageEdgeInsets:UIEdgeInsetsMake(h1, w1, 8, w11)];
     [self.shareBtn setImageEdgeInsets:UIEdgeInsetsMake(h2, w2, 8, w22)];
     [self.reportBtn setImageEdgeInsets:UIEdgeInsetsMake(h3, w3, 8, w33)];
+    
+    
 }
 
 
