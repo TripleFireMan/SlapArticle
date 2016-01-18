@@ -21,10 +21,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-//    self.navigationController.navigationBar.titleTextAttributes = @{NSForegroundColorAttributeName: [UIColor redColor],
-//                                                                    NSFontAttributeName : [UIFont boldSystemFontOfSize:18]};
-    // Do any additional setup after loading the view.
 }
 
 - (void)didReceiveMemoryWarning {
